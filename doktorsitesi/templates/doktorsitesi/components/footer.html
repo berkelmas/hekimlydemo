@@ -1,0 +1,79 @@
+{% load static %}
+
+
+
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-5">
+              <h2 class="ftco-heading-2 logo text-center">Opr. Dr. <span style="color : white">Ali Yılmaz</span></h2>
+              <p class="text-center">Estetik Cerrahisinde ülke genelinde en iyi operasyonlara imza atmış ve birikmiş tecrübesini
+                  yeni hastalarının sağlığına adayan Opr. Dr. Ali Yılmaz ile tanışın.</p>
+            </div>
+            <div class="ftco-footer-widget mb-5">
+            	<h2 class="ftco-heading-2">Adres</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Büyükdere Mahallesi, Çırağan Sokak, A Apartmanı No 144</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text"> 0 (216) 349 28 73</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">ali@draliyilmaz.com</span></a></li>
+	              </ul>
+	            </div>
+
+	            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="{% static 'doktorsitesi/js/jquery.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/jquery-migrate-3.0.1.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/popper.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/jquery.stellar.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/jquery.magnific-popup.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/aos.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/jquery.animateNumber.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/bootstrap-datepicker.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/jquery.timepicker.min.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/scrollax.min.js' %}"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="{% static 'doktorsitesi/js/google-map.js' %}"></script>
+  <script src="{% static 'doktorsitesi/js/main.js' %}"></script>
+
+    <script>
+
+        $('body').on('mouseenter mouseleave','.dropdown',function(e){
+  var _d=$(e.target).closest('.dropdown');
+  if (e.type === 'mouseenter')_d.addClass('show');
+  setTimeout(function(){
+    _d.toggleClass('show', _d.is(':hover'));
+    $('[data-toggle="dropdown"]', _d).attr('aria-expanded',_d.is(':hover'));
+  },300);
+});
+    </script>
+
+  </body>
+</html>

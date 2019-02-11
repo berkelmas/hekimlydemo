@@ -1,0 +1,140 @@
+{% load static %}
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Hekimly Demo Sitesi</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/animate.css' %}">
+
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/magnific-popup.css' %}">
+
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/aos.css' %}">
+
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/ionicons.min.css' %}">
+
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/bootstrap-datepicker.css' %}">
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/jquery.timepicker.css' %}">
+
+
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'doktorsitesi/css/style.css' %}">
+
+      <style>
+
+            @media screen and (min-width : 550px){
+              .div-only-mobile{
+              display:None;
+              }
+            }
+
+            @media screen and (max-width : 550px){
+              .div-only-desktop{
+              display:None;
+              }
+            }
+
+      </style>
+
+  </head>
+
+
+  <body>
+    <nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+    			<div class="col-lg-3 pr-4 align-items-center">
+		    		<a class="navbar-brand" href="{% url 'index' %}">Opt. Dr.<span> Ali Yılmaz</span></a>
+	    		</div>
+	    		<div class="col-lg-9 d-none d-md-block">
+		    		<div class="row d-flex">
+			    		<div class="col-md-4 pr-4 d-flex topper align-items-center">
+			    			<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-map"></span></div>
+						    <span class="text">Addres: Büyükdere Mahallesi, Çırağan Sokak, Örnek Apartmanı No 144</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">Email: ali@draliyilmaz.com</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">Telefon: 0 (216) 349 28 73</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </nav>
+	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container d-flex align-items-center">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+            <p class="button-custom order-lg-last mb-0 div-only-mobile"><a href="tel:+908508408276" style="background-color: #236AA9; color:white" class="btn py-2 px-3">Hemen Ara</a></p>
+
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav mr-auto">
+                <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link pl-0">Ana Sayfa</a></li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Estetik
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+
+
+                        <a class="dropdown-item" href="{% url 'gogusestetigi' %}">Meme Estetiği</a>
+                        <a class="dropdown-item" href="{% url 'burunestetigi' %}">Burun Estetiği</a>
+                        <a class="dropdown-item" href="{% url 'ameliyatsizyuzgerme' %}">Ameliyatsız Yüz Germe</a>
+                        <a class="dropdown-item" href="{% url 'kombineestetik' %}">Kombine Estetik</a>
+                        <a class="dropdown-item" href="{% url 'vucutestetigi' %}">Vücut Estetiği</a>
+                        <a class="dropdown-item" href="{% url 'yuzestetigi' %}">Yüz Estetiği</a>
+                        <a class="dropdown-item" href="{% url 'genitalestetik' %}">Genital Estetik</a>
+                        <a class="dropdown-item" href="{% url 'elcerrahisi' %}">El Cerrahisi</a>
+                        <a class="dropdown-item" href="{% url 'botoks' %}">Botoks</a>
+                        <a class="dropdown-item" href="{% url 'ameliyatsizyuzgerme' %}">Ameliyatsız Yüz Germe</a>
+
+
+                    </div>
+                  </li>
+
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Saç
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="{% url 'sacekimi' %}">Fue Saç Ekimi</a>
+                      <a class="dropdown-item" href="{% url 'biyikekimi' %}">Bıyık Ekimi</a>
+                        <a class="dropdown-item" href="{% url 'biyikekimi' %}">Sakal Ekimi</a>
+                        <a class="dropdown-item" href="{% url 'kasekimi' %}">Kaş Ekimi</a>
+                    </div>
+                  </li>
+
+
+
+                <li class="nav-item"><a href="{% url 'doktorhakkimizda' %}" class="nav-link">Doktor Hakkında</a></li>
+                <li class="nav-item"><a href="{% url 'bilimselyayinlarimiz' %}" class="nav-link">Bilimsel Yayınlar</a></li>
+                <li class="nav-item"><a href="{% url 'iletisim' %}" class="nav-link">İletişim</a></li>
+
+
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
