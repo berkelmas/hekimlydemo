@@ -25,7 +25,7 @@ SECRET_KEY = 'lf+^^sz527p#*mlg4flduzrjxp7j)@b!ew3441r^#8_39jx-nz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['demo.hekimly.com', '134.209.255.218']
 
 
 # Application definition
@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'hekimlydemo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'hekimlydemodatabase',
+        'USER': 'hekimlydemodatabaseuser',
+        'PASSWORD': 'berk693693693',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -119,7 +123,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 
 
