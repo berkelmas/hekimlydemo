@@ -25,7 +25,7 @@ SECRET_KEY = 'lf+^^sz527p#*mlg4flduzrjxp7j)@b!ew3441r^#8_39jx-nz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['demo.hekimly.com', '134.209.255.218']
+ALLOWED_HOSTS = ['demo.hekimly.com']
 
 
 # Application definition
